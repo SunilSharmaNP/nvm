@@ -51,7 +51,12 @@ def _load_config():
 
 try:
     _load_config()
-except:
-    pass
+except ConfigError as e:
+    print(f"Configuration Error: {e}")
+    print("Please set required environment variables in config.env file")
+    raise
+except Exception as e:
+    print(f"Unexpected error loading configuration: {e}")
+    raise
 
 config = Config()

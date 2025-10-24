@@ -5,7 +5,7 @@ import asyncio
 from aiohttp import ClientSession, FormData, ClientTimeout
 from random import choice
 from config import config  # Assuming config.py exists with GOFILE_TOKEN
-from utils import get_human_readable_size, get_progress_bar, get_video_properties
+from helpers.utils import get_human_readable_size, get_progress_bar, get_video_properties
 from tenacity import retry, stop_after_attempt, wait_exponential, \
     retry_if_exception_type, RetryError
 

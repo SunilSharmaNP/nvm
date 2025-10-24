@@ -6,7 +6,7 @@ import time
 import logging
 from datetime import datetime
 from config import config  # Assuming config.py exists
-from utils import get_human_readable_size, get_progress_bar
+from helpers.utils import get_human_readable_size, get_progress_bar
 from tenacity import retry, stop_after_attempt, wait_exponential, \
     retry_if_exception_type, RetryError
 from urllib.parse import urlparse, unquote

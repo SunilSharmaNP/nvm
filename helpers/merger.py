@@ -9,7 +9,7 @@ import shutil
 from typing import List, Optional, Dict, Any
 from collections import Counter
 from config import config
-from utils import get_video_properties, get_progress_bar, get_time_left
+from helpers.utils import get_video_properties, get_progress_bar, get_time_left
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 # --- Progress throttling (unchanged) ---
